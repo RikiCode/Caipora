@@ -16,11 +16,11 @@
         </div>
         <div class="navHeader">
             <ul>
-            <li>Inicio</li>
-            <li>Sobre</li>
-            <li>Tecnologia</li>
-            <li>Dashboard</li>
-            <li>Mapa</li>
+            <li onclick="goTo('navCore')"">Inicio</li>
+            <li onclick="goTo('sobre')">Sobre</li>
+            <li onclick="goTo('tecnologia')">Tecnologia</li>
+            <li onclick="goTo('dashboard')">Dashboard</li>
+            <li onclick="goTo('mapa')">Mapa</li>
         </ul>
         </div>
     </header>
@@ -42,8 +42,8 @@ desenvolvido para detectar desmatamento, tiros e invasões na floresta em tempo 
             <button type="button" class="switchButton">DASHBOARD</button>
         </div>
     </section>
-    <div id="projectSection" class="hidden">
-        <section class="conteudo projeto">
+    <div id="projectSection">
+        <section class="conteudo projeto" id="sobre">
             <h3>SOBRE O CAIPORA</h3>
             <div class="textBox">
                 <p>
@@ -84,7 +84,7 @@ desenvolvido para detectar desmatamento, tiros e invasões na floresta em tempo 
                     </div>
             </div>
         </section>
-        <section class="conteudo projeto tecnologias">
+        <section class="conteudo projeto tecnologias" id="tecnologia">
             <h3>TECNOLOGIAS ULTILIZADAS</h3>
             <div>
                 <div class="divBox">
@@ -114,8 +114,8 @@ desenvolvido para detectar desmatamento, tiros e invasões na floresta em tempo 
             </div>
         </section>
     </div>
-    <div id="dashboardSection" class="hidden">
-        <section class="conteudo dashboard map">
+    <div id="dashboardSection">
+        <section class="conteudo dashboard map" id="mapa">
             <h3>MAPA DE MONITORAMENTO</h3>
             <div class="mapmonitor">
                 <div id="map" ></div>
@@ -157,7 +157,7 @@ desenvolvido para detectar desmatamento, tiros e invasões na floresta em tempo 
                 </div>
             </div>
         </section>
-        <section class="conteudo dashboard">
+        <section class="conteudo dashboard" id="dashboard">
             <h3>DASHBOARD</h3>
             <p>Visualize em tempo real a localização e status dos sensores distribuídos pela floresta amazônica</p>
             <div class="valores">
