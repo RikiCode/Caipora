@@ -2,7 +2,7 @@ const projeto = document.querySelectorAll('#projectSection');
 const dashboard = document.querySelectorAll('#dashboardSection');
 const buttons = document.querySelectorAll(".switchButton");
 const historico = document.getElementById('historico');
-showcontent(1);
+showcontent(0);
 buttons.forEach((el, index) => {
   el.addEventListener('click', (e) => {
     showcontent(index);
