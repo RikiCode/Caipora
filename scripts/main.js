@@ -1,32 +1,36 @@
-const projeto = document.querySelectorAll('#projectSection');
+const project = document.querySelectorAll('#projectSection');
 const dashboard = document.querySelectorAll('#dashboardSection');
 const buttons = document.querySelectorAll(".switchButton");
-const historico = document.getElementById('historico');
+const history = document.getElementById('history');
 showcontent(0);
-// goTo('Inicio');
+
+goTo('dashboard');
+
 buttons.forEach((el, index) => {
   el.addEventListener('click', (e) => {
     showcontent(index);
   });
-});
+})
+
 function showcontent(a){    
     switch (a) {
         case 0:
-            projeto.forEach(el => el.classList.remove('hidden'));
+            project.forEach(el => el.classList.remove('hidden'));
             dashboard.forEach(el => el.classList.add('hidden'));
             buttons[a].classList.add('selected')
             buttons[1].classList.remove('selected')
             break;
         case 1:
             dashboard.forEach(el => el.classList.remove('hidden'));
-            projeto.forEach(el => el.classList.add('hidden'));
+            project.forEach(el => el.classList.add('hidden'));
             buttons[a].classList.add('selected')
             buttons[0].classList.remove('selected')
             break;
         default:
             break;
     }
-};
+}
+
 function goTo(a){
     let x = document.getElementById(a);
     let y = document.getElementById('projectSection')
@@ -41,12 +45,15 @@ function goTo(a){
     x.scrollIntoView({behavior:'smooth'});
     }
 }
+
 function createH(a,b){
     let x = document.createElement('div')
-    x.classList.add('alertahistorico')
+    x.classList.add('alertahistory')
     x.innerHTML = '<h3>' + b +'</h3><p>' + a + '</p>';
-    historico.appendChild(x);
+    history.appendChild(x);
 }
-createH('informações',"< sensor_id >");
-createH('informações',"< sensor_id >");
-createH('informações',"< sensor_id >");
+
+// createH('informações',"< sensor_id >");
+// createH('informações',"< sensor_id >");
+// createH('informações',"< sensor_id >");
+// lembrar me de melhorar a organização dos historicos de alertas --riki
