@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=1920, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
     <title>Caipora</title>
     <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
@@ -24,11 +24,14 @@
         </ul>
         </div>
     </header>
+    <div id="#dev" class="">
+
+    </div>
     <section id="navCore" class="conteudo">
         <div class="logoCore">
             <img src="media/logo.png"/>
-            <h2>INTELIGÊNCIA AMAZÔNICA</h2>
             <h3>CAIPORA</h3>
+            <h2>INTELIGÊNCIA AMAZÔNICA</h2>
         </div>
         <div class="textBox">
         <p>
@@ -160,27 +163,27 @@ desenvolvido para detectar desmatamento, tiros e invasões na floresta em tempo 
         <section class="conteudo dashboard" id="dashboard">
             <h3>DASHBOARD</h3>
             <p>Visualize em tempo real a localização e status dos sensores distribuídos pela floresta amazônica</p>
-            <div class="valores">
-                <div class="divBox azul">
+            <div class="graficos">
+
+                <div class="divBox azul" id="sensoresDb">
                     <h3>Sensores</h3>
                     <div class="textBox">
-                        <h3 class="dashboard" id="sensoresDb">00</h3><p>Ativos</p>
+                        <h3 class="dashboard" >00</h3><p>Ativos Hoje</p>
                     </div>
                 </div>
-                <div class="divBox azul">
+                <div class="divBox azul" id="AlertasDb">
                     <h3>Alertas</h3>
                     <div class="textBox">
-                        <h3 class="dashboard" id="AlertasDb">00</h3><p>Hoje</p>
+                        <h3 class="dashboard">00</h3><p>Alertas Hoje</p>
                     </div>
                 </div>
-                <div class="divBox azul">
+                <div class="divBox azul" id="AtividadeDb">
                     <h3>Ultima atividade</h3>
                     <div class="textBox">
-                        <h3 class="dashboard" id="AtividadeDb">00</h3><p>minutos atras</p>
+                        <h3 class="dashboard">00</h3><p>Minutos Atrás</p>
                     </div>
                 </div>
-            </div>
-            <div class="graficos">
+
                 <div class="historico">
                     <h3>HISTÓRICO</h3>
                     <div id="historico">

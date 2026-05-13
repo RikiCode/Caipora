@@ -3,6 +3,7 @@ const dashboard = document.querySelectorAll('#dashboardSection');
 const buttons = document.querySelectorAll(".switchButton");
 const historico = document.getElementById('historico');
 showcontent(0);
+goTo('Inicio');
 buttons.forEach((el, index) => {
   el.addEventListener('click', (e) => {
     showcontent(index);
